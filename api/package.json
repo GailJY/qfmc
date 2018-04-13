@@ -1,0 +1,22 @@
+{
+  "name": "vueapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongodb": "^3.0.4",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "socket.io": "^2.0.4",
+    "ws": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

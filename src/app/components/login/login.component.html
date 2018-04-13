@@ -1,0 +1,27 @@
+
+<div id='dylogin'>
+    <app-header></app-header>
+    <div class="dylogin">
+        <h3>登录</h3>
+        <h4></h4>
+        <div class="loginMain">
+            <div class="loginMainTop">     
+                <p>已注册客户</p>
+                <p>如已在 <span>NET-A-PORTER 颇特女士</span> 注册，请在此登录。</p>
+                <p>请注意：如只订阅了我们的邮件，并不代表您已注册，因而请您在下面注册。</p>
+                <h2 id='errlogin'></h2>
+                <input type="text" placeholder="输入手机号码" [(ngModel)]="params.username"/>
+                <input type="password" placeholder="输入密码" [(ngModel)]="params.password"/>
+                <button class='btn' (click)="dylogin()">立即登录</button>
+            </div>
+            <div class="loginMainTop">      
+                <p>还没注册？没关系</p>
+                <p><span>NET-A-PORTER 颇特女士</span>  新用户，请点击“立即注册”。</p>
+                <a routerLink="/register" class='btn'>立即注册</a>
+            </div>
+        </div>
+        <!-- <app-loginfooter></app-loginfooter> -->
+        <app-footer> </app-footer> 
+    </div>
+    
+</div>

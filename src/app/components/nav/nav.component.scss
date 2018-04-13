@@ -1,0 +1,19 @@
+.qf-nav{
+	position:fixed;width:6.4375rem;background:#000;color:#fff;top:0;left:-6.4375rem;bottom:0;overflow-x:hidden;overflow-y:auto;display: flex;z-index:10099;
+	
+	a{color:#fff;letter-spacing: 0.007812rem;padding:0.234375rem 0; display: block;}
+}
+.qf-nav-section{
+	padding:0.2rem 0 0.266667rem 0.533333rem;
+
+	li{font-size:0.426667rem;}
+}
+.qf-nav-bar{height: auto;}
+.back{position:absolute;right:0.133333rem;top:0.333333rem;}
+
+.qf-account{display: block;padding: 0.3125rem 0.3125rem 0.3125rem 0.625rem;position:relative;left:-0.703125rem;width:4.296875rem;margin-top:0.421875rem;}
+
+.qf-nav-level2,.qf-nav-level2-1{position:absolute;left:6.640625rem;width:4.21875rem;top:0;bottom:0;overflow-x:hidden;overflow-y:auto;background:#000;visibility: hidden;width: 100%;}
+.qf-nav-back{letter-spacing: 0.007812rem;color:#fff;text-transform: uppercase;cursor:pointer;padding:0.3125rem;width:100%;}
+.qf-nav-divider{height:0.015625rem;width: 3.90625rem;border:0;margin:0 0 0.15625rem 0.3125rem;background-image: linear-gradient(90deg,#666,#000 80%);}
+.qf-nav-section{padding:0.234375rem 0 0.3125rem 0.625rem;}

@@ -1,0 +1,58 @@
+#dymycount{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .dymycount{
+        overflow:auto;padding-top:1.466667rem;
+         flex:1;
+         height:100%;
+         h3{
+            font-size:0.426667rem; 
+            text-transform: uppercase;
+            font-weight: normal;
+            font-family: Arial,Helvetica,sans-serif;
+            overflow: hidden;
+            
+            padding:0.266667rem 0.266667rem;
+            span{
+                letter-spacing: 0.053333rem;
+              font-family: Georgia,"Times New Roman",Times,serif;
+            }
+         }
+         p{
+                font-family: "gill sans",helvetica,arial;
+                margin-top: 0.133333rem;
+                font-size: 0.373333rem;
+               padding:0.266667rem;
+                border-bottom:0.026667rem solid;
+         }
+         h2{
+             font-family: "gill sans",helvetica,arial;
+                margin-top: 0.133333rem;
+                font-size: 0.373333rem;
+               padding:0.266667rem;
+               letter-spacing: 0.053333rem;
+           font-family: "gill sans",helvetica,arial;
+                
+         }
+         h4{
+                padding:0.133333rem 0.4rem 0.266667rem 0.533333rem;
+                button{
+                    border: 0.026667rem solid #CCC;
+                    font-size: 0.346667rem;
+                padding: 0.266667rem 0.4rem;
+                border-radius: 0.08rem;
+                font-family: GillSans;
+                line-height: 0.4rem;
+                text-transform: uppercase;
+                text-align: center;
+                cursor: pointer;
+                letter-spacing: 0.026667rem;
+                -webkit-appearance: none;
+                background: 0 0;
+                color: #000;
+                }
+         }
+        }
+}
+.myad{padding-top:40px !important;}

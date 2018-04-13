@@ -1,0 +1,27 @@
+<div id='dyaddress'>
+     <app-header></app-header>
+    <div class='dyaddress'>
+        <div class="dyaddcontent">
+            <p class="myad"> 地址簿<span class='fr' (click)='gotoback()'>返回上一层</span></p>
+
+            <h4 class='clearfix'>
+                <button class='fr' (click)="changeaddress()">添加/修改送货地址</button>
+            </h4>
+         <h3 *ngIf="hasaddress==false">您的账户中目前没有设置送货地址</h3>
+         <h3 *ngIf="hasaddress==true">
+            <p>收货人:{{myaddr.getname}}</p>
+            <p>联系电话:{{myaddr.telephone}}</p>
+            <p>地址:{{myaddr.address}}</p>
+         </h3>
+        </div>
+         <div class="changeaddress">
+            <h3 *ngFor="let item of ars">
+                <label for="">{{myaddr.transition[item]}} </label>
+                <input type="text" *ngIf="item!=='transition'&&item!=='mydreamlist'&&item!=='mydreamli'" />
+            </h3>
+             
+             <button (click)="saveaddress()">保存</button>
+         </div>
+        <app-footer> </app-footer> 
+    </div>
+</div>

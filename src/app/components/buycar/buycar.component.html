@@ -1,0 +1,68 @@
+
+<div class="buycar">
+    <app-header></app-header>
+    <div class="main">
+        <h1>购物袋</h1>
+        <div class="button" (click)="gotoend()">结算</div>
+        <div class="goods">
+        
+            <div class="good"  *ngFor="let item of dataset;let idx=index" id={{item.id}} [attr.data-idx]="idx" (click)="delete($event)">
+                <input type="checkbox" (click)="input($event,item.price)"/>
+                <div ><img src="{{item.img}}" alt="" /></div>
+                <div class="rbox">
+                    
+                    <div class="good-info">
+                        <div class="good-warming">{{item.brand}}</div>
+                        <p class="good-name">{{item.name}}</p>
+                        <p class="good-color"><span class="span1">类别：</span><span class="span2">{{item.sort}}</span></p>
+                        <p class="good-size"><span class="span1">尺码：</span><span class="span2">{{item.size}}</span></p>
+                        <p class="good-price"><span class="span1">价格：</span><span class="span2 span-price">{{item.price}}</span></p>
+                        <p class="good-delete shachu">从购物袋中删除</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        
+
+        <div class="goods-money">
+            <div class="goods-money1">
+                <div class="goods-money1-labels">
+                    <div class="goods-money1-labels1">商品总金额</div>
+                    <div class="goods-money1-labels2">运费</div>
+                </div>
+                <div class="goods-money1-values">
+                    <span class="span-money">0</span>
+                    <span>{{price3}}</span>
+                </div>
+            </div>
+            <div class="goods-money2">
+                <div class="goods-money2-labels1">小记</div>
+                <div class="goods-money2-labels2">0</div>
+            </div>
+            <div class="button but1" (click)="gotoend()">结算</div>
+            <div class="goods-page-info"><p>请注意，在选择收货地址后，商品的最终价格有可能改变</p></div>
+        </div>
+        <div class="like">
+            <h2>猜你也喜欢</h2>
+            <div class="bbox">
+                <div class="like-goods">
+                    <img src="../../assets/imgs/good2.jpg" alt="" />
+                    <p class="like-brand">Laura Lombardi</p>
+                    <p class="like-name">Curve 金色耳环</p>
+                    <p class="like-price">$159</p>
+                    <div class="like-add">加入购物袋</div>
+                </div>
+                <div class="like-goods">
+                    <img src="../../assets/imgs/good3.jpg" alt="" />
+                    <p class="like-brand">KAYU</p>
+                    <p class="like-name">编织草手提包</p>
+                    <p class="like-price">$162</p>
+                    <div class="like-add">加入购物袋</div>
+                </div>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </div> 
+
+</div>

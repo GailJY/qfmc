@@ -1,0 +1,89 @@
+.qf-header{
+    display: flex;
+    position: fixed;
+    height:1.5625rem;
+    z-index: 1999;
+    clear: both;
+    background: #fff;
+    border-bottom: .1875rem solid #000;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;}
+.qf-header_content{
+    justify-content: flex-start;
+    margin-left: .3125rem;
+}
+.qf-header_content,.qf-header_toolbar{
+    width: 10%;
+    display: flex;
+}
+
+.fa-bars{
+    height: .9375rem;
+    width: .9375rem;
+    margin-left: .25rem;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size:  .625rem;
+    background-color:#fff;
+}
+
+.qf-logo{display: block;flex-grow:1;}
+.qf-logo_img{
+    width:100%;
+    margin:0 auto;
+    max-height: 1.875rem;
+    max-width: 3.6875rem;
+    margin-left: 1.875rem;
+    background: url(../../../assets/imgs/logo.svg);
+    background-size:contain;
+    text-indent:-90000px;
+    text-align: center;
+}
+
+.qf-header_toolbar{
+    justify-content:flex-end;
+    align-self:stretch;
+    align-items:center;
+    margin-right: .3125rem;
+    
+}
+
+.qf-search{font-size:1rem;
+    background:#fff;
+    float: left;
+}
+.qf-search_toggle{display:flex;}
+
+.qf-search_icon{display:block;
+    width: 1rem;
+    height: 1rem;
+    cursor:pointer;
+    text-indent:-9999px;
+    background:url(../../../assets/imgs/search.svg) 50% 50% no-repeat;
+    outline:none;
+    border:none;
+    background-size: .75rem;
+}
+
+
+
+.qf-basket{
+    align-self:stretch;
+    display:flex;
+    align-items:center;
+}
+
+.qf-basket_icon-empty{background:url(../../../assets/imgs/bag.svg) 50% no-repeat;
+    background-size: .4375rem;}
+.qf-basket-icon{
+    position:relative;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    cursor:pointer;
+    margin: 0;
+    z-index:20999;
+}

@@ -1,0 +1,38 @@
+#dymycountedtails{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .dymycountedtails{
+        overflow:auto;padding-top:1.466667rem;
+         flex:1;
+         height:100%;
+         padding:1.866667rem 0.4rem;
+         font-size:0.5rem;
+         input{
+            width: 86%;border:0.013333rem solid ;border-radius: 0.08rem;height: 0.8rem;margin-left:0.613333rem;font-size:0.5rem;
+         }
+         button{
+            margin:0 auto;
+            width: 86%;
+           border-radius: 0.08rem;
+            cursor: pointer;
+            background: #000;
+            color: #FFF;
+            border: 0.026667rem solid #000;
+            padding: 0.266667rem 0.4rem;
+            margin: 0.666667rem;
+            line-height: 0.4rem;
+            font-size: 0.346667rem;
+            text-align: center;
+            display: block;
+            font-family: "微软雅黑";
+            color: #3e3e3e;
+            span{
+                color:white;
+            }
+         }
+            h4{
+                padding:0.133333rem;color:red;
+            }
+         }
+    }

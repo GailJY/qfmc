@@ -1,0 +1,13 @@
+<div id='dymycountedtails'>
+     <app-header></app-header>
+    <div class='dymycountedtails'>
+            <h6><span class='fr' (click)='gotoback()'>返回上一层</span></h6>
+           <p> &nbsp;<span>我的账户 ：</span><i>{{username}}</i> </p>
+            <h4 id="errmsg"></h4>
+           <p><label for="">原来密码 ：<br /><input type="password" [(ngModel)]="oldpsw"/></label></p>
+           <p><label for="">新密码 ：<br /><input type="password" [(ngModel)]="newpsw1"/></label></p>
+           <p><label for="">再次确认新密码 ：<br /><input type="password"[(ngModel)]="newpsw2" (blur)="changepsw()" /></label></p>
+             <button (click)="gotochange()"><span>保存</span></button>
+        <app-footer> </app-footer> 
+    </div>
+</div>

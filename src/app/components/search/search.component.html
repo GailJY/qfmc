@@ -1,0 +1,18 @@
+<div class="qf-search-pupup">
+	<div class="qf-search-header">
+		<form action="">
+			<input type="text" class="input" placeholder="您在寻找..."  (input)="focus(val.value)" #val>
+			<button></button>
+		</form>
+		<button type="button" class="qf-search-close" (click)="back()">取消</button>
+	</div>
+	<div class="qf-search-content">
+		<div>
+			<ul *ngIf="dataset">
+				 <li  *ngFor="let obj of dataset;let idx=index">
+                   <p (click)="gotolist(obj.id)"> <span>{{idx+1}} &nbsp;</span><span>{{obj.brand}}-{{obj.name}}</span></p>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>

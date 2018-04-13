@@ -1,0 +1,14 @@
+<div id='dymycount'>
+     <app-header></app-header>
+    <div class='dymycount'>
+           <h3 class="myad"><span>我的账户</span></h3>
+           <p>欢迎您 &nbsp;<i>{{username}}</i> <em class="fr fa fa-chevron-right fa-1x"></em></p>
+          <a routerLink="/address"> <p>地址 <em class="fr fa fa-chevron-right fa-1x"></em></p></a>
+           <a routerLink="/mycountdetails"><p>账户信息<em class="fr fa fa-chevron-right fa-1x"></em></p></a>
+          <a href="javascript:void(0)"> <p>我的订阅<em class="fr fa fa-chevron-right fa-1x"></em></p></a>
+          <a routerLink="/mydream"> <p>愿望清单<em class="fr fa fa-chevron-right fa-1x"></em></p></a>
+          <a href="javascript:void(0)"> <h2>我的订单<em class="fr fa fa-chevron-right fa-1x"></em></h2></a>
+           <h4><button (click)="outhere()">退出</button></h4>
+        <app-footer> </app-footer> 
+    </div>
+</div>

@@ -1,0 +1,89 @@
+#dymydream{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .dymydream{
+        overflow:auto;padding-top:1.466667rem;
+         flex:1;
+         height:100%;
+         h6{
+                font-family: Georgia,"Times New Roman",Times,serif;
+                font-size: 0.586667rem;
+                height: 1.1em;
+                text-align: center;
+                margin: 0.4rem 0 0.373333rem;
+                text-align:center;
+                font-weight: 400;
+                letter-spacing: .0.001333rem;
+         }
+            h3{
+
+                padding:0.266667rem;border-top:0.002667rem solid;border-bottom:0.026667rem solid;
+             select{
+                    -webkit-appearance: menulist;
+                    box-sizing: border-box;
+                    align-items: center;
+                    white-space: pre;
+                    -webkit-rtl-ordering: logical;
+                    color: black;
+                    background-color: white;
+                    cursor: default;
+                    border-width: 1px;
+                    border-style: solid;
+                    width: 2.033333rem;height: 0.6rem;font-size:0.366667rem;
+                    option{
+                        font-size:0.186667rem;    
+                    }
+             }
+            }
+            h4{
+                h5{
+                    padding: 0;
+                    border: 0;
+                    vertical-align: baseline;
+                    font-family: GillSans,"Gill Sans MT",Calibri,sans-serif;
+                    font-size: 0.373333rem;
+                    font-weight: 400;
+                    letter-spacing: .0.002667rem;
+                    text-align: center;
+                }
+                p{
+                        padding: 0;
+                        border: 0;
+                        vertical-align: baseline;
+                        font-family: GillSans,"Gill Sans MT",Calibri,sans-serif;
+                        font-size: 0.373333rem;
+                        font-weight: 400;
+                        letter-spacing: .0.002667rem;
+                        text-align:center;
+                        padding:0.0rem 0.4rem;
+                }
+            }
+         }
+         ul{margin-bottom:2.533333rem;
+            li{
+                font-size: 0.366667rem;    font-family: Georgia,"Times New Roman",Times,serif;font-weight: 400;padding-top:0.4rem;
+                height: 6.333333rem;
+                img{
+                    padding:0.4rem;width: 2.666667rem;height: 3.2rem;
+                }
+                button{
+                    width: 100%;
+                    border-radius: 0.08rem;
+                    cursor: pointer;
+                    background: #000;
+                    color: #FFF;
+                    border: 0.026667rem solid #000;
+                    padding: 0.266667rem 0.4rem;
+                    margin-bottom:30px; 
+                    line-height: 0.4rem;
+                    font-size: 0.346667rem;
+                    text-align: center;
+                    display: block;
+                }
+                p{
+                    line-height:0.893333rem;
+                }
+            }
+         }
+    }

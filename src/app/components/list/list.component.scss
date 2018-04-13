@@ -1,0 +1,83 @@
+.list{
+    display: flex;flex-direction: column;height: 100%;
+    .main-content-container{
+        padding-top: 1.733333rem;flex: 1;display: flex;flex-direction: column;
+        .search{
+            height: 1.333333rem;background-color: #FFF;border-bottom: 0.026667rem solid #ececec;padding: 0 0.4rem;
+            a{font-size: 0.346667rem;color: #000;float: right;line-height: 1.333333rem;}
+        }
+        .main{
+            flex: 1;overflow: auto;
+            .product-list{
+                width: 100%;display: flex;flex-wrap: wrap;
+                .product-row{
+                    width: 50%;margin: 0.266667rem 0;padding: 0 2%;text-align: center;
+                    img{margin: 0 auto;width: 100%;height: auto;}
+                    .brand,.product-name{display: block;font-size: 0.373333rem;}
+                    .brand{margin: 0.133333rem 0;font-weight: 600;}
+                    .price-wrapper{font-weight: bold;font-size: 0.426667rem;margin: 0.133333rem 0;}
+                }
+            }
+
+            .product-nothing{
+                height: 100%;display: flex;flex-flow: column;justify-content: center;align-items: center;
+                .t1{
+                    font-size: 0.533333rem;margin: 0.4rem 0;font-weight: bold;
+                }
+                .t2,.t4{
+                    font-size: 0.373333rem;
+                }
+                .t3{
+                    height: 0.066667rem;width: 1.333333rem;background-color: #000;margin: 0.8rem 0;
+                }
+            }
+        }
+    }
+}
+.search-view{
+    position: fixed;left: 0;top: 0;right: 0;bottom: 0;background-color: #fff;z-index: 9999;margin-top: 17.786667rem;display: none;
+    .head{
+        text-align: right;height: 1.333333rem;padding: 0 0.533333rem;line-height: 1.333333rem;font-size: 0.346667rem;border-bottom: 1px solid #000;
+        .back{
+             background: url("../../../assets/imgs/icon.svg") 37.5% 71% no-repeat;width: 0.666667rem;height: 0.666667rem;background-size: 1100%;float: left;display: inline-block;margin-top: 0.333333rem;display: none;
+        }
+        .ensure{
+            float: right;display: inline-block;
+        }
+    }
+    .main{
+        width: 100%;height: 100%;position: relative;
+        .nav{
+            width: 100%;position: absolute;left: 0;top: 0;
+            ul{
+                li{
+                    height: 1.333333rem;border-bottom: 1px solid #ccc;padding: 0 0.533333rem;line-height: 1.333333rem;font-size: 0.346667rem;
+                    .num{padding: 0 0.266667rem;}
+                    .yi{border-right: 0.013333rem solid #000;}
+                    
+                }
+                .chose{
+                    display: flex;flex-flow: column;justify-content: center;line-height: 0.466667rem;
+                    .two{line-height: 0.306667rem;font-size: 0.266667rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+                }
+                .last{
+                    position: relative;
+                    .border{height: 0.066667rem;background-color: #000;width: 0.36rem;position:absolute;left: 36.25%;top: 0.866667rem;}
+                }
+            }
+        }
+        .active{border-bottom: 0.066667rem solid #000;}
+        .nav-paixu, .nav-sort, .nav-brand{
+            width: 100%;position: absolute;left: 100%;top: 0;display: flex;flex-flow: column;height: 100%;
+        }  
+        .nav-head{
+            text-align: center;height: 1.333333rem;background-color: #FFF;font-size: 0.346667rem;line-height: 1.333333rem;
+        }
+        .nav-ul{
+            overflow: auto;flex:1;margin-bottom: 1.066667rem;
+            li{
+                height: 1.066667rem;line-height: 1.066667rem;padding: 0 0.533333rem;width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size: 0.346667rem;
+            }
+        }
+    }
+}

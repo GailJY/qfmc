@@ -1,0 +1,66 @@
+.promo-bar{
+    z-index: 5;background-color: #EEE;overflow: hidden;
+    .service-message-wrapper{
+        background: #eee;margin: 0 1.333333rem;text-align: center;padding: 0.053333rem 0 0.133333rem;position: relative;height: 1.413333rem;
+        .service-banner,.service-banner-bottom{
+            position: absolute;left: 0;right: 0;bottom: 0.026667rem;text-align: center;font-size: 0.373333rem;font-style: italic;display: none;
+        }
+        .service-banner-bottom{
+            top: 0.053333rem;
+            p{
+                font-style: italic;font-size: 0.373333rem;color: #000;line-height: 0.533333rem;padding-top: 0.16rem;
+            }
+        }
+    }
+}
+.footer{
+    overflow: hidden;background: #eee;border-top: 0.266667rem solid #000;border-bottom: 0.266667rem solid #000;
+    .contact-button-wrapper{
+        a{
+            border-radius: 0.08rem;cursor: pointer;background: #000;color: #FFF;border: 0.026667rem solid #000;padding: 0.266667rem 0.4rem;margin: 0.666667rem;line-height: 0.4rem;font-size: 0.346667rem;text-align: center;display: block;
+        }
+    }
+    .product-nav{
+        position: relative;width: 100%;background: #FFF;
+        .icon-jia-jian{
+            position: absolute;right: 0.32rem;top: 0.4rem;z-index: 0;width: 0.666667rem;height: 0.666667rem;background: url("../../../assets/imgs/icon.svg") 18.587360594795538% 90.19607843137256% no-repeat;background-size: 1100%;cursor: pointer;
+        }
+        .header-title{
+            height: 1.466667rem;line-height: 1.466667rem;padding-left: 0.666667rem;text-align: left;font-size: 0.373333rem;color: #000;cursor: pointer;
+        }
+        .show-hide-content{
+            overflow: hidden;padding: 0 0.666667rem;display: none;
+            .customer-care{
+                columns: 2;
+                li{
+                    line-height: 1.066667rem;
+                    a{font-size: 0.373333rem;color: #000;}
+                }
+            }
+            .myapp{
+                border-top: 0.026667rem solid #eee;border-bottom: 0.026667rem solid #eee;color: #000;font-size: 0.373333rem;line-height: 1.066667rem;margin: 0.266667rem 0 0.533333rem;
+            }
+        }
+    }
+    .quisition-social{
+        width: 100%;padding: 0.133333rem 0.533333rem 0;
+        .form-container{
+            position: relative;margin-bottom: 0.533333rem;margin-top: 0.4rem;padding-left: 0.373333rem;border-radius: 0.08rem;background-color: #FFF;overflow: hidden;
+            .email-input{
+                width: 80%;padding: 0.4rem 0;font-size: 0.373333rem;
+            }
+            .email-sublimt{
+                background-color: #FFF;position: absolute;top: 0.28rem;right: 0.24rem;background: url("../../../assets/imgs/icon.svg") 65.05576208178438% 70.58823529411765% no-repeat;width: 0.666667rem;height: 0.666667rem;background-size: 1100%;
+            }
+        }
+    }
+    .copyright{
+        width: 410px;margin: 0.266667rem auto 0.533333rem;height: 0.426667rem;
+        span{
+            font-size: 0.346667rem;float: left;letter-spacing: 0.026667rem;line-height: 0.346667rem;font-weight: bold;
+        }
+        img{
+            width: 3.733333rem;height: 0.586667rem;float: right;position: relative;top: -0.106667rem;
+        }
+    }
+}

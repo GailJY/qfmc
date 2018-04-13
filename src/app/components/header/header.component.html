@@ -1,0 +1,24 @@
+<header class="qf-header">
+    <div class="qf-header_content">
+        <button class="qf-header_burger"></button>
+    </div>
+    <a href="#" class="qf-logo">
+        <h1 class="qf-logo_img ">NET-A-PORTER</h1>
+    </a>
+    <div class="qf-header_toolbar">
+        <div class="qf-search">
+            <div class="qf-search_toggle">
+                <span class="qf-search_icon" (click)="sh()"></span>
+            </div>
+             <app-search></app-search>
+        </div>
+       
+        <div class="qf-basket" (click)="gotoaccount()">
+            <div>
+                <a href="javascript:void(0)" class="qf-search_icon qf-basket_icon-empty"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<app-nav></app-nav>

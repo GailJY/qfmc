@@ -1,0 +1,56 @@
+#dymyorder{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .dymyorder{
+        overflow:auto;padding-top:1.466667rem;
+         flex:1;
+         height:100%;
+         h4{
+            text-align:center;position:relative;
+                font-family: Georgia,"Times New Roman",Times,serif;
+                font-size: 0.886667rem;
+                height: 1.1em;
+                text-align: center;
+                margin: 0.4rem 0 0.373333rem;
+                text-align: center;
+                font-weight: 400;
+                letter-spacing: 0 0.001333rem;
+                line-height:0.573333rem;
+         }
+         h3{
+            padding:0.1rem; font-size:0.433333rem;font-weight:400;font-family:serif;
+            
+         }
+         p{
+            font-size:0.4rem;border:none;
+         }
+         .firstli{
+                 border-top:1px solid;
+         }
+         ul{
+            li{ 
+                padding-left:0.4rem;
+                padding-right:0.4rem;
+               
+                img{
+                    float:left;width: 2.233333rem;height: 2.233333rem;margin-right:0.266667rem;padding-top:0.4rem;border:none;
+                }
+                p{
+                    padding-top:0.4rem;
+                    line-height:0.666667rem;
+                    border:none;
+                }
+            }
+         }
+         .checkorder{
+            position:absolute;top:-0.04rem;left:0.16rem;font-size:0.533333rem;
+            option{
+                font-size:0.226667rem;
+            }
+         }
+         }
+    }
+    #goback{
+        padding-right:0.266667rem;font-size:0.533333rem;
+    }

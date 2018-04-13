@@ -1,0 +1,31 @@
+<div id='dymydream'>
+     <app-header></app-header>
+    <div class='dymydream'>
+          <h6 >我的收藏 <span class='fr' (click)='gotoback()'>返回上一层</span></h6>
+           
+          <h3>
+            <select name="" id="" [(ngModel)]="myorderselect" [value]="myorderselect" (change)="changeselect()">
+                <option  *ngFor="let item of mysort" [value]="item">{{item}}</option>  
+            </select>
+            <ul>
+                <li *ngFor="let obj of myorder let idx=index">
+                    <ng-template ngFor let-key [ngForOf]="myorderkey">
+                     <p *ngIf="key=='brand'">品牌：{{obj['brand']}}</p> 
+                      </ng-template>
+                      <ng-template ngFor let-key [ngForOf]="myorderkey">
+                       <p *ngIf="myaddr.mydreamli.indexOf(key)<0"> {{myaddr.mydreamlist[key]}} ：{{obj[key]}}</p>
+                       <img class='fl'*ngIf="key=='img'" [src]="obj[key]" alt="" />
+                          <p *ngIf="key=='qty'">数量：{{obj['qty']}} 件</p> 
+                     </ng-template>
+                        <button (click)="deleteObj(idx)">删除</button>
+                </li>
+            </ul>
+
+          </h3>
+          <h4 *ngIf="myorder.length==0">
+                <h5>您的愿望清单暂时是空的</h5>
+                <p>想要实时追踪您的心仪单品？只需在产品页面中选择您的尺码，然后点击“加入愿望清单”。</p>
+          </h4>
+        <app-footer> </app-footer> 
+    </div>
+</div>

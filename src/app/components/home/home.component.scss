@@ -1,0 +1,184 @@
+main{
+    display:block;
+    background:#fff;
+    padding:0.78125rem 0 1em;}
+.nap-homepage{
+    min-width: 6.875rem;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+.quick-links{
+    margin: 1rem .4375rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.quick-links_link{
+    display: block;
+    background-color:#000;
+    color:#fff;
+    width: 4.375rem;
+    text-align: center;
+    border-radius: .0625rem;
+    font-weight:lighter;
+    letter-spacing: normal;
+    font: .375rem/.875rem AkkuratPro,serif;
+}
+
+.new-content-area-mobile{
+    padding-top: .875rem;
+    display: block;
+}
+
+.market-area{
+    width: 45%;
+    padding:1.5625rem 1rem 0 1.1875rem;
+    width:calc(100% - 1rem);
+    padding:0;
+    margin: 0 .5rem;
+}
+
+.block-heading{
+    line-height: 1.5;
+    font-size: .3125rem;
+    letter-spacing: .0625rem;
+    width:100%;
+    text-transform:uppercase;
+}
+
+.market-block{
+    margin-top: .5rem;
+}
+.market-block_img{
+    margin-top: .5rem;
+    padding-bottom:68%;
+}
+.place-img{
+    position:relative;
+    height:0;
+    overflow:hidden;
+}
+.place-img img{position:absolute;top:0;left:0;width:100%;}
+
+.article-head{
+    margin: .625rem 0 0;
+    font-size: .625rem;
+    line-height: .75rem;
+    letter-spacing: .125rem;
+    font-weight: 400;   
+}
+.article-sub{
+    margin: .5rem 0 0;
+    font-size: .3125rem;
+}
+
+.article-cta{
+    display: block;
+    margin: .46875rem 0 0;
+}
+.article-cta a{
+    color:#838383;
+    line-height: 1.14;
+    border-bottom: 1px solid #838383;
+    font-size: .3125rem;
+    transition: color .4s,border-color .4s;
+}
+
+.edit-cover{margin: 1.125rem .5rem 1.1875rem;}
+.edit-cover_img{padding-bottom:125%;}
+
+.edit-cover_text{display: block;margin:0 2.125rem;text-align:center;}
+.edit-cover_text .sz{font-size: .5rem;}
+
+.editorial-area{padding: 0 .5rem;}
+
+.block-head{line-height: 1.5;
+font-size: .375rem;
+letter-spacing: .625rem;
+width:100%;
+text-transform:uppercase;}
+
+.edit-area{border-right:0;
+margin-top:0;
+padding: .9375rem 0 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.edit-block_img{
+    padding-bottom:150%;
+}
+.edit-block{
+    width: calc(50% - 3px); 
+    margin-bottom: 35px; 
+    text-align:center;
+    position:relative;}
+.a-h{font-size: .5rem}
+
+.horizontal-rule{border-top: .0625rem solid #000;}
+
+
+.nap-live{
+    padding-bottom: 1.5rem; 
+    margin: 0 .5rem;
+    padding: .8125rem 0 0;}
+
+.b-h{font-size: .25rem; letter-spacing: 2px;}
+
+.nap-live .sell{margin-top:0.09375rem; max-width:7.8125rem;font-size: 0.21875rem;}
+
+.shopper-count{
+    font: 300 14px AkkuratPro,sans-serif;
+    padding: 0.3125rem 0 0.109375rem;
+}
+
+.naplive-carousel{padding-top:33px;height:0;padding-bottom:65%;}
+// .naplive-carousel .slider-frame {height:0!important;}
+.slider-slide{
+  display: inline-block;
+  vertical-align: top;
+  width:180px;
+  height:auto;
+  margin:auto 30px;
+}
+.nap-live-link{display: block;}
+.slider-slide .image{
+  width: 100%;
+}
+.activity{
+ font-size: 20px; padding-top:30px;
+}
+.nap-live .designer{margin-top:30px; margin-bottom:4px;}
+.s-img{padding-bottom:135%;width:90%;}
+.place-img{position:relative;height:0;overflow:hidden;}
+.nap-live .designer span{text-transform: uppercase;font-size: 20px;}
+.nap-live .name{overflow:hidden;text-overflow:ellipsis;}
+
+.icon{font-size:0.46875rem;}
+.promo-bar{
+    z-index: 5;background-color: #EEE;overflow: hidden;margin-top:1.5625rem;
+    .service-message-wrapper{
+        background: #eee;margin: 0 1.333333rem;text-align: center;padding: 0.053333rem 0 0.133333rem;position: relative;height: 1.413333rem;
+        .service-banner,.service-banner-bottom{
+            position: absolute;left: 0;right: 0;bottom: 0.026667rem;text-align: center;font-size: 0.373333rem;font-style: italic;display: none;
+        }
+        .service-banner-bottom{
+            top: 0.053333rem;
+            p{
+                font-style: italic;font-size: 0.373333rem;color: #000;line-height: 0.533333rem;padding-top: 0.16rem;
+            }
+        }
+    }
+}
+
+.qf-nav-cover{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#fff;
+  cursor:pointer;
+  display: none;
+  z-index:9999;
+}

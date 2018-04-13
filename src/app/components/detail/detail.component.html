@@ -1,0 +1,210 @@
+<div class="detail">
+    <app-header></app-header>
+    <div class="main-content-container">
+        <div class="promo-bar">
+            <div class="dismiss">
+                <div class="dismiss-icon"></div>
+            </div>
+            <div class="service-message-wrapper">
+                <div class="service-banner" style="display: block">单笔订单超过350美元，即可享受中国境内免费快速配送</div>
+                <div class="service-banner">悦享28天内免费退换</div>
+                <div class="service-banner">欢迎关注颇特女士官方微信公众号：NETAPORTER_WECHAT</div>
+            </div>
+        </div>
+        <div class="cartips">
+            <div class="title">已加入您的购物车</div>
+            <div class="item">
+                <img src="//cache.net-a-porter.com/images/products/1043027/1043027_in_pp.jpg" />
+                <div class="item_r">
+                    <div class="brand"><span>BRAND</span></div>
+                    <div class="name"><span>name</span></div>
+                    <div class="size"><span>size</span></div>
+                    <div class="price"><span>price</span></div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="btn-pay"><a routerLink="/buycar">结算</a></div>
+            </div>
+        </div>
+        <div class="cover" (click)="hide()"></div>
+        <div class="main">
+            <div class="container-title">
+                <h1 class="brand">
+                    <a class="designer-name" href="javascript:void(0);" (click)="tobrand($event)">
+                        <span class="name">{{dataset.brand}}</span>
+                    </a>
+                </h1>
+                <h2 class="product-name">{{dataset.name}}</h2>
+                <span class="product-price">$<span class="price">{{dataset.price}}</span></span>
+            </div>
+            <div class="container-imagery">
+                <div class="main-image-carousel">
+                    <div class="image-counter"><span>1</span> / {{n+1}}</div>
+                    <div class="swiper-prev-button"></div>
+                    <ul class="swiper-wrapper">
+                        <li style="display: block" [attr.data-img]="dataset.img"><img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded1($event)" (error)="loading($event)" (click)="zoom($event)"/></li>
+                        <li [attr.data-img]="dataset.img"><img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded2($event)" (error)="loading($event)" (click)="zoom($event)"/></li>
+                        <li [attr.data-img]="dataset.img"><img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded3($event)" (error)="loading($event)" (click)="zoom($event)"/></li>
+                        <li [attr.data-img]="dataset.img"><img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded4($event)" (error)="loading($event)" (click)="zoom($event)"/></li>
+                        <li [attr.data-img]="dataset.img"><img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded5($event)" (error)="loading($event)" (click)="zoom($event)"/></li>
+                        <li [attr.data-img]="dataset.img" class="video-open">
+                            <img src="../../../assets/imgs/loading.gif" alt="" (load)="loaded2($event)"/>
+                            <div class="icon-video_play"></div>
+                        </li>
+                    </ul>
+                    <div class="swiper-next-button"></div>
+                </div>
+                <div id="product-video" style="display: none">
+                    <video id="video" preload="auto" muted [src]="videoStr">
+                        <source src="https://video.net-a-porter.com/videos/productPage/984610_detail.mp4" type="video/mp4">
+                    </video>
+                    <button id="close">
+                        <div></div>
+                    </button>
+                    <div id="video-controls">
+                        <button id="playpause"></button>
+                        <div id="seekbarProgress" class="seekbar"></div>
+                        <div id="seekbarBuffered" class="seekbar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-details">
+                <form class="product-form">
+                    <div class="sel">
+                        <div class="tooltip" (click)="hide()">
+                            <div>请选择尺码</div>
+                        </div>
+                        <select class="select" (click)="hidetips()">
+                            <option value="-">选择尺码</option>
+                            <option value="x small">x small</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                            <option value="x large">x large</option>
+                        </select>
+                        <span class="icon-select"></span>
+                    </div>
+                    <div class="button-container">
+                        <div class="addtocar btn" (click)="addtocar()"><a href="javascript:void(0);">加入购物车</a></div>
+                        <div class="addtowish btn" (click)="addtowish()"><a href="javascript:void(0);">加入愿望清单</a></div>
+                    </div>
+                </form>
+                <nav class="product-nav">
+                    <ul>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian" style="background-position: 92.9368% 80.3922%;"></div>
+                            <div class="header-title">
+                                尺码信息
+                            </div>
+                            <div class="show-hide-content" style="display: block">
+                                <div class="font-list-copy">
+                                    - 符合标准尺码，请选择平时所穿尺码
+                                    - 宽松设计
+                                    - 中等重量针织面料
+                                    - 模特身高 177 厘米，所穿尺码 S
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian"></div>
+                            <div class="header-title">
+                                编辑笔记
+                            </div>
+                            <div class="show-hide-content">
+                                <p>
+                                    GANNI 这款 “Evangelista” 毛衣以同等比例的马海毛和羊毛织就，质感柔软同时甚为保暖。单品的舒适高领优雅大方，两侧带象牙白色条纹的插肩双袖则别具运动感。不妨发挥混搭创意，以印花中长半裙取代经典牛仔裤，演绎充满惊喜的随性风格。
+                                </p>
+                                <div class="font-list-copy">
+                                    - 海军蓝色和象牙白色马海毛、羊毛、聚酰胺和弹性纤维混纺面料
+                                    - 套头款
+                                    - 34% 马海毛， 34% 羊毛，27% 聚酰胺，5% 弹性纤维
+                                    - 手洗
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian"></div>
+                            <div class="header-title">
+                                搭配灵感
+                            </div>
+                            <div class="show-hide-content">
+                                <p>
+                                    GANNI 这款 “Evangelista” 毛衣以同等比例的马海毛和羊毛织就，质感柔软同时甚为保暖。单品的舒适高领优雅大方，两侧带象牙白色条纹的插肩双袖则别具运动感。不妨发挥混搭创意，以印花中长半裙取代经典牛仔裤，演绎充满惊喜的随性风格。
+                                </p>
+                                <div class="font-list-copy">
+                                    - 海军蓝色和象牙白色马海毛、羊毛、聚酰胺和弹性纤维混纺面料
+                                    - 套头款
+                                    - 34% 马海毛， 34% 羊毛，27% 聚酰胺，5% 弹性纤维
+                                    - 手洗
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian"></div>
+                            <div class="header-title">
+                                猜你也喜欢
+                            </div>
+                            <div class="show-hide-content tuihuo">
+                                <ul class="product-list">
+                                    <li class="product-row" *ngFor="let obj of dataset2; trackBy:trackByName;" [id]="obj.id">
+                                        <a href="javascript:void(0);" [attr.data-img]="obj.img">
+                                            <img src="../../../assets/imgs/loading.gif" height="600" width="800" [alt]="obj.name" (load)="loaded($event)" />
+                                            <span class="brand">{{obj.brand | uppercase}}</span>
+                                            <span class="product-name">{{obj.name}}</span>
+                                            <div class="price-wrapper">$<span class="price">{{obj.price}}</span></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian"></div>
+                            <div class="header-title">
+                                配送和退货
+                            </div>
+                            <div class="show-hide-content tuihuo">
+                                <div class="delivery">
+                                    <p>查看适合您配送地点的选项</p>
+                                    <div class="view-more">
+                                        <a href="javascript:void(0);">浏览</a>
+                                    </div>
+                                </div>
+                                <div class="returns">
+                                    <p>28天内可进行退换，我们为您提供免费上门取货服务</p>
+                                    <div class="view-more">
+                                        <a href="javascript:void(0);">了解更多信息</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <div class="icon-jia-jian"></div>
+                            <div class="header-title">
+                                <a href="javascript:void(0);">帮助和建议</a>
+                            </div>
+                            <div class="show-hide-content bangzhu">
+                                <p>
+                                    我们每周7天，每天24小时以14种语言竭诚为您服务我们的时尚顾问使用14种语言每周7天，每天24小时竭诚为您服务。 拨打电话: +852 3018 6814
+                                </p>
+                                <div class="btn-call btn"><a href="javascript:void(0);">拨打客服电话¬</a></div>
+                                <div class="btn-email btn"><a href="javascript:void(0);">发送电邮至客服团队</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="product-code">
+                    产品编码：<span>{{dataset.id}}</span>
+                </div>
+            </div>
+            <app-footer></app-footer>
+        </div>
+    </div>
+    <div class="zoom">
+        <div class="zoom-img">
+            <img src="../../../assets/imgs/loading.gif" alt=""/>
+        </div>
+        <div class="zoom-close" (click)="zoomClose()">
+            <span></span>
+        </div>
+    </div>
+</div>

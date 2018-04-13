@@ -1,0 +1,84 @@
+
+<div class='Mainregister'>
+     <app-header></app-header>
+    <div class='dyregister'>
+        <main>
+            <h1>立即注册</h1>
+            <p class='sell'>注册 NET-A-PORTER 颇特女士 账户，享受更多
+            <a  onclick="document.getElementById('benefits').scrollIntoView()" class="skip-to-benefits">精彩礼遇</a> 
+            </p>
+            <div class='registeration-from'>
+                <h2 id="regform"></h2>
+                <div class='register-from '  >
+                    <input type="text" placeholder="名字*"  [(ngModel)]="customdata['firstname']" (blur)="login()"/>
+                    <input type="text" placeholder="姓氏*" [(ngModel)]="customdata['lastname']" (blur)="login()"/>
+                    <input type="text" placeholder="电话*" [(ngModel)]="customdata['account']" (blur)="login()"/>
+                    <input type="password" placeholder="密码*" [(ngModel)]="customdata['psw']" (blur)="login()"/>
+                    <div class='selectCountry'>
+                       <select name="country" id="countrys">
+                            <option value="-">请选择国家或地区</option>
+                            <option *ngFor="let obj of distarea" [value]="obj">{{obj}}</option>
+                        </select> 
+                     
+                       <i class='fa fa-angle-down  fa-2x'></i>
+
+                    </div>  
+                    <div class='selectS clearfix'>
+                        <div class='fl'> 
+                            <select name="birthday" id="birthday">
+                                <option value="-">出生日期</option>
+                                 <option *ngFor="let obj of distnumbers" [value]="obj">{{obj}}</option>
+                            </select> 
+                         
+                           <i class='fa fa-angle-down  fa-2x'></i></div>
+                        <div class='fr'> 
+                                <select name="birthmouth" id="birthmouth">
+                                    <option value="-">出生月份</option>
+                                    <option *ngFor="let obj of distmounths" [value]="obj">{{obj}}</option>
+                                </select> 
+                             
+                               <i class='fa fa-angle-down fa-2x'></i></div>
+                    </div> 
+
+                    
+                </div>
+                
+            </div>
+            <div class='checkbox1' (click)='tomessage()'>
+                <label >
+                    <div class="checkboxdiv1">
+                        <em class="fa  fa-4x" [class.fa-check-square-o]='message==true'></em>
+                    </div>
+                    <span>我希望以邮件方式获取最新潮流快报、时尚和美容资讯以及 NET-A-PORTER 颇特女士 的优惠活动信息</span>
+                </label>
+            </div>
+            <div class='checkbox1 checkboxdiv2 clearfix' (click)="messa()">
+                <label >
+                    <div class="checkboxdiv1">
+                        <em class="fa fa-4x" [class.fa-check-square-o]='messagejx==true'></em>
+                    </div>
+                </label>
+                    <span>我不是机器人</span>
+            </div>
+                <button (click)="tologin()">注册</button>
+                <div class='mes'>
+                    <p>已经注册？<a routerLink="/login">登录</a></p>
+                    <p><a href="">隐私条款</a></p>
+                </div>
+        </main>
+        <div id="benefits" class='benefits'>
+            <img src="https://www.net-a-porter.com/nap/build/2018.05.00/images/emailSignup.jpg" alt="" />
+            <ul>
+                <li>快速登录和付款，并通过短信收取即时更新的配送信息</li>
+                <li>以邮件方式获悉编辑精选的时尚、美容及健身内容</li>
+                <li>创建并管理愿望清单，随时随地掌控心动美物</li>
+                <li>第一时间了解折扣、优惠以及更多信息</li>
+                <li>即时收到挚爱品牌的新品上线提醒</li>
+            </ul>
+        </div>
+        <!-- <app-loginfooter></app-loginfooter>   -->
+        <app-footer> </app-footer> 
+    </div>
+</div>
+
+   

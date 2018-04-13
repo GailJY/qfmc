@@ -1,0 +1,35 @@
+<!-- <div id='dymyorder'>
+     <app-header></app-header>
+    <div class='dymyorder' (scroll)="addscroll()">
+          <h4> 购买记录<span  id='goback'class='fr' (click)='gotoback()'>返回</span>
+          <select class='checkorder' name="" id="">
+              <option value="全部">全部</option>
+              <option value="已付款">已付款</option>
+              <option value="未付款">未付款</option>
+          </select></h4>
+          
+          <ul>
+              <li *ngFor="let item of buylistfirst;let idx=index" class='firstli'>
+                <p>下单时间：{{item['deliverDate']}}</p>
+                  <h3><span>收货人：{{item['guestbook']}}</span>&nbsp;<span>总价:{{item['price']}}元</span> <br /><span *ngIf="(item['status'])==1"> 状态：已付款</span><span *ngIf="(item['status'])==0"> 状态：未付款</span> </h3>
+                  <ul>
+                      <li *ngFor="let items of buylistdetail;let ind=index">
+                           <div *ngIf="ind==idx">
+                                <ul >
+                                    <li *ngFor="let its of items" class='clearfix'>
+                                  
+                                 <img  class="loadimg" src="./assets/imgs/1.gif" [attr.datasrc]="its['img']" >
+                                       <p>品牌：{{its['brand']}} <br />商品详情：{{its['name']}}</p>
+                                         
+                                       
+                                    </li>
+                                </ul>
+                                
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+        <app-footer> </app-footer> 
+    </div>
+</div> -->
